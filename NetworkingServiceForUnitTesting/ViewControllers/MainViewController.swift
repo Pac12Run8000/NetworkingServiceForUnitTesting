@@ -13,23 +13,23 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         // API call using a singleton
-        /*
-        NetworkingSingletonService.shared.fetchAPIResponse(url: HelperConstants.testUrl) { result in
-            switch result {
-            case .failure(let err):
-                print("Here is the error: \(err.localizedDescription)")
-            case .success(let data):
-                print("Here is the data:\(data)")
-            }
-        }
-         */
+        
+//        NetworkingSingletonService.shared.fetchAPIResponse(url: HelperConstants.testUrl2) { result in
+//            switch result {
+//            case .failure(let err):
+//                print("Here is the error: \(err.localizedDescription)")
+//            case .success(let data):
+//                print("MainViewController data:\(data)")
+//            }
+//        }
+         
         
         
         
-        
+//        Refactored networking service that is not a singleton
         
         let networkingService = NetworkingServiceDependancyInjection()
-        networkingService.fetchAPIResponse(url: HelperConstants.testUrl) { result in
+        networkingService.fetchAPIResponse(url: HelperConstants.testUrl1) { result in
             switch result {
                 case .success(let data):
                     print("Data: \(data)")
@@ -39,6 +39,7 @@ class MainViewController: UIViewController {
                     break
             }
         }
+         
         
     }
 

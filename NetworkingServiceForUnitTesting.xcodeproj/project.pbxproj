@@ -17,7 +17,19 @@
 		095A284B295D51F5005F8126 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A284A295D51F5005F8126 /* HelperConstants.swift */; };
 		095A284D295D6AC8005F8126 /* NetworkingSingletonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A284C295D6AC8005F8126 /* NetworkingSingletonService.swift */; };
 		095A2850295D6B82005F8126 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A284F295D6B82005F8126 /* ResponseError.swift */; };
+		095A2858295E1154005F8126 /* NetworkingServiceForUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A2857295E1154005F8126 /* NetworkingServiceForUnitTestingTests.swift */; };
+		095A285F295E1189005F8126 /* NetworkingSingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A285E295E1189005F8126 /* NetworkingSingletonTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		095A2859295E1154005F8126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 095A2823295D4F59005F8126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 095A282A295D4F59005F8126;
+			remoteInfo = NetworkingServiceForUnitTesting;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		095A282B295D4F59005F8126 /* NetworkingServiceForUnitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingServiceForUnitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +44,20 @@
 		095A284A295D51F5005F8126 /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
 		095A284C295D6AC8005F8126 /* NetworkingSingletonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingSingletonService.swift; sourceTree = "<group>"; };
 		095A284F295D6B82005F8126 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		095A2855295E1154005F8126 /* NetworkingServiceForUnitTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingServiceForUnitTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		095A2857295E1154005F8126 /* NetworkingServiceForUnitTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceForUnitTestingTests.swift; sourceTree = "<group>"; };
+		095A285E295E1189005F8126 /* NetworkingSingletonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingSingletonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		095A2828295D4F59005F8126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095A2852295E1154005F8126 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				095A282D295D4F59005F8126 /* NetworkingServiceForUnitTesting */,
+				095A2856295E1154005F8126 /* NetworkingServiceForUnitTestingTests */,
 				095A282C295D4F59005F8126 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				095A282B295D4F59005F8126 /* NetworkingServiceForUnitTesting.app */,
+				095A2855295E1154005F8126 /* NetworkingServiceForUnitTestingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +143,15 @@
 			path = CustomErrors;
 			sourceTree = "<group>";
 		};
+		095A2856295E1154005F8126 /* NetworkingServiceForUnitTestingTests */ = {
+			isa = PBXGroup;
+			children = (
+				095A2857295E1154005F8126 /* NetworkingServiceForUnitTestingTests.swift */,
+				095A285E295E1189005F8126 /* NetworkingSingletonTests.swift */,
+			);
+			path = NetworkingServiceForUnitTestingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +172,24 @@
 			productReference = 095A282B295D4F59005F8126 /* NetworkingServiceForUnitTesting.app */;
 			productType = "com.apple.product-type.application";
 		};
+		095A2854295E1154005F8126 /* NetworkingServiceForUnitTestingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095A285B295E1154005F8126 /* Build configuration list for PBXNativeTarget "NetworkingServiceForUnitTestingTests" */;
+			buildPhases = (
+				095A2851295E1154005F8126 /* Sources */,
+				095A2852295E1154005F8126 /* Frameworks */,
+				095A2853295E1154005F8126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				095A285A295E1154005F8126 /* PBXTargetDependency */,
+			);
+			name = NetworkingServiceForUnitTestingTests;
+			productName = NetworkingServiceForUnitTestingTests;
+			productReference = 095A2855295E1154005F8126 /* NetworkingServiceForUnitTestingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +202,10 @@
 				TargetAttributes = {
 					095A282A295D4F59005F8126 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					095A2854295E1154005F8126 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 095A282A295D4F59005F8126;
 					};
 				};
 			};
@@ -168,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				095A282A295D4F59005F8126 /* NetworkingServiceForUnitTesting */,
+				095A2854295E1154005F8126 /* NetworkingServiceForUnitTestingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +236,13 @@
 				095A283B295D4F5B005F8126 /* LaunchScreen.storyboard in Resources */,
 				095A2838295D4F5B005F8126 /* Assets.xcassets in Resources */,
 				095A2836295D4F59005F8126 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095A2853295E1154005F8126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +263,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		095A2851295E1154005F8126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095A2858295E1154005F8126 /* NetworkingServiceForUnitTestingTests.swift in Sources */,
+				095A285F295E1189005F8126 /* NetworkingSingletonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		095A285A295E1154005F8126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 095A282A295D4F59005F8126 /* NetworkingServiceForUnitTesting */;
+			targetProxy = 095A2859295E1154005F8126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		095A2834295D4F59005F8126 /* Main.storyboard */ = {
@@ -392,6 +472,42 @@
 			};
 			name = Release;
 		};
+		095A285C295E1154005F8126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93TAG27MAJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroverTech.NetworkingServiceForUnitTestingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkingServiceForUnitTesting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkingServiceForUnitTesting";
+			};
+			name = Debug;
+		};
+		095A285D295E1154005F8126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93TAG27MAJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroverTech.NetworkingServiceForUnitTestingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkingServiceForUnitTesting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkingServiceForUnitTesting";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +525,15 @@
 			buildConfigurations = (
 				095A2840295D4F5B005F8126 /* Debug */,
 				095A2841295D4F5B005F8126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095A285B295E1154005F8126 /* Build configuration list for PBXNativeTarget "NetworkingServiceForUnitTestingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095A285C295E1154005F8126 /* Debug */,
+				095A285D295E1154005F8126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
