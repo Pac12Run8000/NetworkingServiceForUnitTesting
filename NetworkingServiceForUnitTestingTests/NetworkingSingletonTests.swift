@@ -23,23 +23,19 @@ final class NetworkingSingletonTests: XCTestCase {
     func testNetworkingSingleton() {
         
         let expectation = XCTestExpectation(description: "singleton call")
-        
         NetworkingSingletonService.shared.fetchAPIResponse(url: HelperConstants.testUrl1) { result in
-            
-            
-            print("Fire in the hole!!!")
-           
-//            switch result {
-//            case .success(let data):
-//                print("unit test:\(data)")
-//            case .failure(let err):
-//                print(err.localizedDescription)
-//            }
-//
-//            expectation.fulfill()
+            switch result {
+            case .success(let data):
+                print("unit test:\(data)")
+                expectation.fulfill()
+            case .failure(let err):
+                print(err.localizedDescription)
+                expectation.fulfill()
+            }
+            self.waitForExpectations(timeout: 10)
         }
         
-//        waitForExpectations(timeout: 10)
+
     }
 
     func testPerformanceExample() throws {
