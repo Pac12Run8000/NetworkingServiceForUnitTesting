@@ -13,7 +13,6 @@
 		095A2836295D4F59005F8126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095A2834295D4F59005F8126 /* Main.storyboard */; };
 		095A2838295D4F5B005F8126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095A2837295D4F5B005F8126 /* Assets.xcassets */; };
 		095A283B295D4F5B005F8126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095A2839295D4F5B005F8126 /* LaunchScreen.storyboard */; };
-		095A2846295D5121005F8126 /* NetworkingServiceSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A2845295D5121005F8126 /* NetworkingServiceSingleton.swift */; };
 		095A2848295D513A005F8126 /* NetworkingServiceDependancyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A2847295D513A005F8126 /* NetworkingServiceDependancyInjection.swift */; };
 		095A284B295D51F5005F8126 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A284A295D51F5005F8126 /* HelperConstants.swift */; };
 		095A284D295D6AC8005F8126 /* NetworkingSingletonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A284C295D6AC8005F8126 /* NetworkingSingletonService.swift */; };
@@ -29,7 +28,6 @@
 		095A2837295D4F5B005F8126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		095A283A295D4F5B005F8126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		095A283C295D4F5B005F8126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		095A2845295D5121005F8126 /* NetworkingServiceSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceSingleton.swift; sourceTree = "<group>"; };
 		095A2847295D513A005F8126 /* NetworkingServiceDependancyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceDependancyInjection.swift; sourceTree = "<group>"; };
 		095A284A295D51F5005F8126 /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
 		095A284C295D6AC8005F8126 /* NetworkingSingletonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingSingletonService.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 		095A2844295D50D6005F8126 /* NetworkingService */ = {
 			isa = PBXGroup;
 			children = (
-				095A2845295D5121005F8126 /* NetworkingServiceSingleton.swift */,
 				095A2847295D513A005F8126 /* NetworkingServiceDependancyInjection.swift */,
 				095A284C295D6AC8005F8126 /* NetworkingSingletonService.swift */,
 			);
@@ -197,7 +194,6 @@
 				095A284B295D51F5005F8126 /* HelperConstants.swift in Sources */,
 				095A2848295D513A005F8126 /* NetworkingServiceDependancyInjection.swift in Sources */,
 				095A282F295D4F59005F8126 /* AppDelegate.swift in Sources */,
-				095A2846295D5121005F8126 /* NetworkingServiceSingleton.swift in Sources */,
 				095A2850295D6B82005F8126 /* ResponseError.swift in Sources */,
 				095A2831295D4F59005F8126 /* SceneDelegate.swift in Sources */,
 				095A284D295D6AC8005F8126 /* NetworkingSingletonService.swift in Sources */,
